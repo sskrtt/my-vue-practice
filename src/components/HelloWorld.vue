@@ -24,7 +24,9 @@ RawBlameHistory
     <form>
       <p>新しいguestの情報を入力して ADD Guestボタンを押してください
       <p>name: <input type="text" v-model="newName"> name of guest: {{newName}}</p>
-      <p>sex: <input type="text" v-model="newSex"> sex of guest: {{newSex}}</p>
+      <p>sex: <input type="radio" id = "Male" value = "Male" v-model="newSex"><label for="Male">Male</label>
+              <input type="radio" id = "Female" value = "Female" v-model="newSex"><label for="Female">Female</label>
+               sex of guest: {{newSex}}</p>
       <p>room: <input type="number" v-model="newRoom"> room of guest: {{newRoom}}</p>
     </form>
  <div class="guest-list">
